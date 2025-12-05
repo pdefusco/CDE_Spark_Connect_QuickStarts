@@ -33,7 +33,7 @@ To deploy the demo / HOL via this automation you need:
 Launch the Docker container.
 
 ```
-docker run -p 8888:8888 pauldefusco/cde_125_sparkconnect_quickstart_jl
+docker run -p 8888:8888 pauldefusco/cde_125_sparkconnect_quickstart_jl:latest
 ```
 
 Launch the JupyterLab IDE in your browser by copy and pasting the provided url as shown below.
@@ -72,7 +72,7 @@ Finally, run the following commands to install the CDE Spark Connect tarballs.
 
 ```
 pip3 install cdeconnect.tar.gz  
-pip3 install pyspark-3.5.1.tar.gz
+pip3 install pyspark-3.5.4.tar.gz
 ```
 
 ![alt text](/img/install-deps.png)
