@@ -12,7 +12,7 @@ Spark Connect is a client–server architecture for Apache Spark that separates 
 
 Cloudera Data Engineering is a platform that helps organizations build, manage, and run Spark pipelines at scale. It provides tools for collecting, preparing, and processing large amounts of data so it can be used for analytics, reporting, or machine learning. The platform automates and simplifies Spark dependency management, job observability, resource management, and more, making it easier and faster for data engineers to scale data engineering pipelines.
 
-You can leverage Spark Connect from anywhere.
+You can leverage Spark Connect to connect to a CDE Virtual Cluster from anywhere.
 
 ## Requirements
 
