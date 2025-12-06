@@ -129,6 +129,8 @@ In the Sessions UI, validate the Session is Running.
 
 Now that the session is running you're ready to run the code. Make sure your session name (in this example ```jl-qs-session```) reflects the argument to the ```sessionName``` constructor in the first cell.
 
+![alt text](/img/notebook-screenshot.png)
+
 ## Summary & Next Steps
 
 Spark Connect introduces a modern client–server architecture that cleanly separates applications from the Spark driver, allowing developers to interact with Spark from lightweight clients such as JupyterLab, web applications, microservices, or even mobile apps.
