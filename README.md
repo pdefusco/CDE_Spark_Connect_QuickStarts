@@ -10,7 +10,7 @@ In this repository you can find Docker containers to help you get started with C
 
 Spark Connect is a client–server architecture for Apache Spark that separates the Spark driver from the application client. It lets developers write Spark code in lightweight clients—such as Python, SQL, or even mobile and web applications—while communicating with a remote Spark session over gRPC. This design improves stability, enables long-lived interactive sessions, and makes Spark more flexible by allowing clients to upgrade independently of the Spark cluster.
 
-Cloudera Data Engineering is a platform that helps organizations build, manage, and run Spark pipelines at scale. It provides tools for collecting, preparing, and processing large amounts of data so it can be used for analytics, reporting, or machine learning. The platform automates many tasks, making it easier and faster for data engineers to move data reliably from one place to another.
+Cloudera Data Engineering is a platform that helps organizations build, manage, and run Spark pipelines at scale. It provides tools for collecting, preparing, and processing large amounts of data so it can be used for analytics, reporting, or machine learning. The platform automates and simplifies Spark dependency management, job observability, resource management, and more, making it easier and faster for data engineers to scale data engineering pipelines.
 
 You can leverage Spark Connect from anywhere.
 
