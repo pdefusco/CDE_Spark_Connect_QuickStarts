@@ -77,6 +77,30 @@ pip3 install pyspark-3.5.4.tar.gz
 
 ![alt text](/img/install-deps.png)
 
+#### Upload data to CDE Files Resource
+
+Compress files for upload:
+
+```
+tar -czvf rawtransactions.tar.gz rawtransactions
+tar -czvf trx_batch_1.tar.gz trx_batch_1
+tar -czvf trx_batch_2.tar.gz trx_batch_2
+```
+
+Create a CDE Files Resource and upload files:
+
+```
+cde resource create \
+  --name data \
+  --type files
+
+cde resource upload-archive \
+  --name data \
+  --local-path rawtransactions.tar.gz \
+  --local-path trx_batch_1.tar.gz \
+  --local-path trx_batch_2.tar.gz
+```
+
 #### Launch a CDE Spark Connect Session
 
 Start a CDE Session of type Spark Connect. Edit the Session Name parameter so it doesn't collide with other users' sessions. You will be prompted for your Workload Password. This is the same password you used to log into CDP.
@@ -89,7 +113,8 @@ cde session create \
   --driver-cores 2 \
   --driver-memory "2g" \
   --executor-cores 2 \
-  --executor-memory "2g"
+  --executor-memory "2g" \
+  --mount-1-resource data
 ```
 
 ![alt text](/img/launchsess.png)
@@ -99,6 +124,10 @@ In the Sessions UI, validate the Session is Running.
 ![alt text](/img/cde_session_validate_1.png)
 
 ![alt text](/img/cde_session_validate_2.png)
+
+#### Run the Notebook Cells
+
+Now that the session is running you're ready to run the code. Make sure your session name (in this example ```jl-qs-session```) reflects the argument to the ```sessionName``` constructor in the first cell.
 
 ## Summary & Next Steps
 
