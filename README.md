@@ -1,5 +1,7 @@
 # CDE Spark Connect QuickStarts
 
+![alt text](img/spark-connect-slide.png)
+
 ## Objective
 
 In this repository you can find Docker containers to help you get started with CDE Spark Connect with minimal effort. This repository will host a growing list of quickstarts including the most popular IDE's.
