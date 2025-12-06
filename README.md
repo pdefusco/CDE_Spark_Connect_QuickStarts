@@ -101,6 +101,8 @@ cde resource upload-archive \
   --local-path trx_batch_2.tar.gz
 ```
 
+![alt text](/img/compress.png)
+
 #### Launch a CDE Spark Connect Session
 
 Start a CDE Session of type Spark Connect. Edit the Session Name parameter so it doesn't collide with other users' sessions. You will be prompted for your Workload Password. This is the same password you used to log into CDP.
